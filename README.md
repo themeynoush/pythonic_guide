@@ -45,8 +45,8 @@ import logging
 
 try:
     result = process_packet(data)
-except (ValueError, KeyError) as exc:
-    logging.warning("Packet processing failed: %s", exc)
+except (ValueError, KeyError) as e:
+    logging.warning("Packet processing failed: %s", e)
     result = None
 ```
 
